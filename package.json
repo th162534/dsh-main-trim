@@ -1,0 +1,11 @@
+{
+  "name": "dsh-main-trim",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Trim the main session's inherited tool surface without disabling plugins (keeps plugin UIs alive).",
+  "exports": {
+    "./main-trim.mjs": "./main-trim.mjs"
+  },
+  "files": ["main-trim.mjs", "deny.json"]
+}

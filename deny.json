@@ -1,0 +1,12 @@
+{
+  "deny": [
+    "config_backup", "config_restore", "config_list_snapshots", "config_sync_push", "config_sync_pull",
+    "housekeeper_clean", "housekeeper_plan", "housekeeper_report",
+    "agent_soul_check", "agent_soul_doctor", "agent_soul_install", "agent_soul_layers",
+    "agent_soul_manifest", "agent_soul_plan", "agent_soul_scaffold", "agent_soul_verify", "set_persona",
+    "schedule_create", "schedule_update", "schedule_delete", "schedule_list",
+    "bili_vision", "bili_summary", "bili_screen",
+    "subagent", "subagent_fork", "workflow",
+    "create_goal", "get_goal", "update_goal"
+  ]
+}
