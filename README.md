@@ -24,6 +24,17 @@
    `main-trim` 行。升级 DSH 后重跑该脚本即可同步新内置插件。
 3. 名单在 `deny.json`；日志写 `<HOME>/.dsh/main-trim.log`。
 
+## 验证
+
+重启后看日志：
+
+```
+apply preset=standard deny=30
+blocked=8/30 skipped=22
+```
+
+`blocked` 是真正挡住的数量，`skipped` 是「在自身作用域注册、限制不到的」——22 属于正常，不是配置写错。想看某个名字为什么被跳过，日志里会逐条列出 `skip <name>: names unknown global tool`。
+
 ## 注意
 
 - 覆盖行进 profile 时必须是**裸行**（`- id: preset-standard`），写成 `- insert:` 会追加第二个
